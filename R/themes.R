@@ -3,13 +3,12 @@
 #' Theme inspired by the plots on
 #' [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines).
 #'
-#' @inheritParams ggplot2::theme_light
+#'
 #'
 #' @importFrom ggplot2 %+% %+replace%
 #'
 #' @family themes idea
 #' @export
-
 theme_idea_light <- function(base_size = 12, base_family = "sans"){
   ggplot2::theme_light(base_size = base_size, base_family = base_family) +
     ggplot2::theme(strip.background = ggplot2::element_rect(fill = idea_colors$coolgray, color = idea_colors$coolgray),
@@ -26,7 +25,6 @@ theme_idea_light <- function(base_size = 12, base_family = "sans"){
 #' Theme inspired by the plots on
 #' [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines).
 #'
-#' @inheritParams theme_idea_light
 #'
 #' @importFrom ggplot2 %+% %+replace%
 #'
