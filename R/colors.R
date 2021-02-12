@@ -121,6 +121,22 @@ idea_palettes <- list(
 )
 
 
+#' KIPP palettes with ramped colors
+#'
+#' @param palette Choose from `idea_palettes` list
+#' @param alpha transparency from 0 (completely transparent) to 1 (completely opaque)
+#' @param reverse If `TRUE``, the direction of the color ramp is reversed.
+#'
+#' @return a function that takes the number of colors needed as an argument
+#' @export
+#'
+#' @examples
+#' library(scales)
+#' show_col(idea_palette_ramp()(10))
+#'
+#' filled.contour(volcano,color.palette = idea_palette_ramp(), asp=1)
+#'
+
 idea_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE) {
   pal <- idea_palettes[[palette]]
   if (reverse){
@@ -129,28 +145,5 @@ idea_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE) {
 
   #return
   grDevices::colorRampPalette(pal, alpha)
-}
-
-
-
-scale_color_idea <- function(palette="div",
-                             discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
-  if (discrete) {
-    discrete_scale("colour", "idea", palette=idea_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
-  } else {
-    scale_color_gradientn(colours = idea_palette_ramp(palette, alpha = alpha, reverse = reverse, ...)(256))
-  }
-}
-
-
-
-scale_fill_idea <- function(palette="div",
-                            discrete = TRUE, alpha=1, reverse = TRUE, ...) {
-  if (discrete) {
-    discrete_scale("fill", "idea", palette=idea_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
-  }
-  else {
-    scale_fill_gradientn(colours = idea_palette_ramp(palette, alpha = alpha, reverse = reverse)(256), ...)
-  }
 }
 
