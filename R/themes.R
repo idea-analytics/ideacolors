@@ -1,9 +1,10 @@
 #' Theme inspired by IDEA Brand Guidelines
 #'
 #' Theme inspired by the plots on
-#' [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines).
+#' [IDEA Brand Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines).
 #'
-#'
+#' @param base_size base font size, given in pts.
+#' @param base_family base font family
 #'
 #' @importFrom ggplot2 %+% %+replace%
 #'
@@ -33,8 +34,8 @@ theme_idea_light <- function(base_size = 12, base_family = "sans"){
 theme_idea_min <- function(){
   ideacolors::theme_idea_light() +
     ggplot2::theme(
-      axis.line = element_line(color = NA),
-      panel.grid  = element_blank(),
-      panel.background = element_rect(fill = "gray95"),
-      panel.border = element_rect(color = NA))
+      axis.line = ggplot2::element_line(color = NA),
+      panel.grid  = ggplot2::element_blank(),
+      panel.background = ggplot2::element_rect(fill = "gray95"),
+      panel.border = ggplot2::element_rect(color = NA))
 }
