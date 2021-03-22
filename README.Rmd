@@ -1,0 +1,65 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ideacolors <a href='https://idea-analytics.github.io/ideacolors'><img src='man/figures/logo.png' align="right" height="139" /></a>
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ideacolors is simple: to ensure that IDEA R&A graphics generated in `R` with `ggplot2` conform to [IDEA's Brand Guidelines](https://ideapublicschoolsorg.sharepoint.com/:b:/r/sites/MCE/Shared%20Documents/Creative%20Resources,%20Logos,%20and%20Mascots/Brand%20Guidelines/branding_brand_guidelines_10x10_2019.pdf?csf=1&web=1&e=SfZG79) by providing themes and scales. It uses the palette defined in the Brand Guidelines document found on pages 21-22. 
+
+The point is to help us innovate on the content of our visualizations rather than the look and feel. Indeed, the latter is important in conveying analysis and insights in a familier way, but it remains more sizzle than steak. 
+
+## Installation
+
+Since this is an internal package, you need to install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("idea-analytics/ideacolors")
+```
+## Examples
+
+Here we can use `scale_idea_colors` and `theme_idea_light`
+
+```{r example, warning=FALSE}
+library(ideacolors)
+
+library(tidyverse)
+
+p <- ggplot(mtcars, aes(x=disp, y=mpg)) +
+  geom_point(aes(color=as_factor(cyl))) +
+  scale_color_idea(palette = "div") +
+  theme_idea_light()
+  
+p
+```
+
+And we can change it up with a qualitative color scale and  `theme_idea_min`:
+```{r example_2, warning=FALSE}
+p + 
+  scale_color_idea(palette = "qual") +
+  theme_idea_min()
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
