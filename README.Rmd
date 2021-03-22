@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 The goal of ideacolors is simple: to ensure that IDEA R&A graphics generated in `R` with `ggplot2` conform to [IDEA's Brand Guidelines](https://ideapublicschoolsorg.sharepoint.com/:b:/r/sites/MCE/Shared%20Documents/Creative%20Resources,%20Logos,%20and%20Mascots/Brand%20Guidelines/branding_brand_guidelines_10x10_2019.pdf?csf=1&web=1&e=SfZG79) by providing themes and scales. It uses the palette defined in the Brand Guidelines document found on pages 21-22. 
 
-The point is to help us innovate on the content of our visualizations rather than the look and feel. Indeed, the latter is important in conveying analysis and insights in a familier way, but it remains more sizzle than steak. 
+The point is to help us innovate on the content of our visualizations rather than the look and feel. Indeed, the latter is important in conveying analysis and insights in a familiar way, but it remains more sizzle than steak. 
 
 ## Installation
 

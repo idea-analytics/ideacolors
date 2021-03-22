@@ -14,7 +14,7 @@ Guidelines document found on pages 21-22.
 
 The point is to help us innovate on the content of our visualizations
 rather than the look and feel. Indeed, the latter is important in
-conveying analysis and insights in a familier way, but it remains more
+conveying analysis and insights in a familiar way, but it remains more
 sizzle than steak.
 
 ## Installation
