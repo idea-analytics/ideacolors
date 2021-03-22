@@ -1,1 +1,16 @@
 url: https://idea-analytics.github.io/ideacolors
+reference:
+- title: Scales
+  desc: IDEA scales for color and fill in ggplot2
+- contents:
+  - starts_with("scale_")
+- title: Themes
+  desc: IDEA themed themes for ggplot2
+- contents:
+  - starts_with("theme_")
+- title: Color helpers
+  desc: IDEA-themed colors and palettes, so you don't have to look them up
+- contents:
+  - idea_colors
+  - idea_palettes
+  - idea_palette_ramp
