@@ -121,7 +121,7 @@ idea_palettes <- list(
 )
 
 
-#' KIPP palettes with ramped colors
+#' IDEA palettes with ramped colors
 #'
 #' @param palette Choose from `idea_palettes` list
 #' @param alpha transparency from 0 (completely transparent) to 1 (completely opaque)
