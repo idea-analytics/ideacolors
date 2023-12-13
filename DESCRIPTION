@@ -1,7 +1,7 @@
 Package: ideacolors
 Type: Package
 Title: Helpers for  using IDEA colors with ggplot2
-Version: 0.1.0
+Version: 0.1.0.9000
 Author: Chris Haid
 Maintainer: Chris Haid <christopher.haid@ideapublicschools.org>
 Description: >
@@ -14,7 +14,7 @@ Imports:
     grDevices,
     viridis,
     ggplot2
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Suggests: 
     tidyverse,
     scales
