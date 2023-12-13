@@ -17,7 +17,8 @@ scale_fill_idea(
 
 \item{discrete}{whether to use a discrete colour palette}
 
-\item{alpha}{pass through parameter to \code{viridis}}
+\item{alpha}{The alpha transparency, a number in [0,1], see argument alpha in
+\code{\link[grDevices]{hsv}}.}
 
 \item{reverse}{If `TRUE``, the direction of the color ramp is reversed.}
 
