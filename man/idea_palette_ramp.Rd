@@ -2,7 +2,7 @@
 % Please edit documentation in R/colors.R
 \name{idea_palette_ramp}
 \alias{idea_palette_ramp}
-\title{KIPP palettes with ramped colors}
+\title{IDEA palettes with ramped colors}
 \usage{
 idea_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
 }
@@ -17,7 +17,7 @@ idea_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
 a function that takes the number of colors needed as an argument
 }
 \description{
-KIPP palettes with ramped colors
+IDEA palettes with ramped colors
 }
 \examples{
 library(scales)

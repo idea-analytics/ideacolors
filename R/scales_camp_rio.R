@@ -1,8 +1,8 @@
-#' IDEA color scale palette for ggplot2
+#' Camp RIO color scale palette for ggplot2
 #'
-#' @rdname scale_color_idea
+#' @rdname scale_color_camp_rio
 #'
-#' @param palette Choose from 'idea_palettes' list
+#' @param palette Choose from 'camp_rio_palettes' list
 #'
 #' @param reverse logical, Reverse the order of the colours?
 #'
@@ -19,30 +19,30 @@
 #' library(ggplot2)
 #' ggplot(mtcars, aes(mpg, wt)) +
 #'   geom_point(aes(colour = factor(cyl))) +
-#'   scale_colour_idea(palette="qual")
+#'   scale_colour_camp_rio(palette="qual")
 #'
 #' ggplot(mtcars, aes(mpg, wt)) +
 #'   geom_point(aes(colour = hp)) +
-#'   scale_colour_idea(palette="qual", discrete = FALSE)
+#'   scale_colour_camp_rio(palette="qual", discrete = FALSE)
 #' ggplot(data = mpg) +
 #'   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
-#'   scale_colour_idea(palette="bluegray")
+#'   scale_colour_camp_rio(palette="bluegray")
 
 #' @export
 #'
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
-scale_color_idea <- function(palette="div",
-                             discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+scale_color_camp_rio <- function(palette="div",
+                                 discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
   if (discrete) {
-    ggplot2::discrete_scale("colour", "idea", palette=idea_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
+    ggplot2::discrete_scale("colour", "camp_rio", palette=camp_rio_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
   } else {
-    ggplot2::scale_color_gradientn(colours = idea_palette_ramp(palette, alpha = alpha, reverse = reverse, ...)(256))
+    ggplot2::scale_color_gradientn(colours = camp_rio_palette_ramp(palette, alpha = alpha, reverse = reverse, ...)(256))
   }
 }
 
-#' @rdname scale_color_idea
+#' @rdname scale_color_camp_rio
 #' @export
-scale_colour_idea <- scale_color_idea
+scale_colour_camp_rio <- scale_color_camp_rio
 
 
 
@@ -66,13 +66,13 @@ scale_colour_idea <- scale_color_idea
 #' @importFrom viridis scale_fill_viridis
 #'
 #' @export
-scale_fill_idea <- function(palette="div",
-                            discrete = TRUE, alpha=1, reverse = TRUE, ...) {
+scale_fill_camp_rio <- function(palette="div",
+                                discrete = TRUE, alpha=1, reverse = TRUE, ...) {
   if (discrete) {
-    discrete_scale("fill", "idea", palette=idea_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
+    discrete_scale("fill", "camp_rio", palette=camp_rio_palette_ramp(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
-    scale_fill_gradientn(colours = idea_palette_ramp(palette, alpha = alpha, reverse = reverse)(256), ...)
+    scale_fill_gradientn(colours = camp_rio_palette_ramp(palette, alpha = alpha, reverse = reverse)(256), ...)
   }
 }
 
