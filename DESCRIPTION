@@ -1,9 +1,9 @@
 Package: ideacolors
 Type: Package
 Title: Helpers for  using IDEA colors with ggplot2
-Version: 0.1.0
-Author: Chris Haid
-Maintainer: Chris Haid <christopher.haid@ideapublicschools.org>
+Version: 1.0.0
+Author: Chris Haid, Steven Macapagal
+Maintainer: Chris Haid <christopher.haid@ideapublicschools.org>, Steven Macapagal <steven.macapagal@ideapublicschools.org>
 Description: >
     This packages has a simple set of ggplot themes and scales
     that are based on IDEA Public School's Branding Guide.
@@ -14,7 +14,7 @@ Imports:
     grDevices,
     viridis,
     ggplot2
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Suggests: 
     tidyverse,
     scales

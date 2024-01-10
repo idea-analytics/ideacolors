@@ -1,7 +1,7 @@
 url: https://idea-analytics.github.io/ideacolors
 reference:
 - title: Scales
-  desc: IDEA scales for color and fill in ggplot2
+  desc: IDEA scales for color and fill in ggplot2, including Camp RIO
 - contents:
   - starts_with("scale_")
 - title: Themes
@@ -14,3 +14,6 @@ reference:
   - idea_colors
   - idea_palettes
   - idea_palette_ramp
+  - camp_rio_colors
+  - camp_rio_palettes
+  - camp_rio_palette_ramp
