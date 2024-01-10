@@ -1,7 +1,7 @@
 Package: ideacolors
 Type: Package
 Title: Helpers for  using IDEA colors with ggplot2
-Version: 0.1.0
+Version: 1.0.0
 Author: Chris Haid
 Maintainer: Chris Haid <christopher.haid@ideapublicschools.org>
 Description: >
