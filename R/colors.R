@@ -1,11 +1,11 @@
-#' IDEA Public Schools Colors
+#' IDEA Public Schools Colors (2019)
 #'
-#' Named list of colors from the [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines)
+#' Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
-#'The list of available colors is: darkblue, blue, cyan, lime, magenta, melon,
-#'yellow, coolgray, gray, lightgray, darkgray, red
-
+#' The list of available colors is: darkblue, blue, cyan, lime, magenta, melon,
+#' yellow, coolgray, gray, lightgray, darkgray, red
+#'
 #' @export
 idea_colors <- list(
   darkblue = "#1a4784",#blues
@@ -28,12 +28,43 @@ idea_colors <- list(
 
 )
 
-#' IDEA Color Palettes
+#' IDEA Public Schools Colors (2024)
 #'
-#'A collection of color palettes based on the [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines)
+#' Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
-#'The list of available palettes is:
+#' The list of available colors is: blue, yellow, darkblue, lime, cyan, melon,
+#' vermillion, coolgray, gray, lightgray.
+#'
+#' @export
+idea_colors_2024 <- list(
+
+  # primary brand colors
+  blue = "#0078FF",
+  yellow = "#FFCF01",
+  darkblue = "#002F6C",
+
+  # secondary brand colors
+  lime = "#A7BD39",
+  cyan = "#27BFC9",
+  melon = "#F6851F",
+
+  # accent color
+  vermillion = "#D22630",
+
+  # additional grey selection
+  coolgray = "#626363",
+  gray = "gray",
+  lightgray = "lightgray"
+
+)
+
+#' IDEA Color Palettes
+#'
+#' A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+#' (you'll need to behind the firewall to see that guide).
+#'
+#' The list of available palettes is:
 #' * qual
 #' * div
 #' * blueorange
@@ -42,7 +73,7 @@ idea_colors <- list(
 #' * greengray
 #' * orangegray
 #'
-#'@examples
+#' @examples
 #'
 #' # Make an x-y plot using the div palette
 #' library(tidyverse)
