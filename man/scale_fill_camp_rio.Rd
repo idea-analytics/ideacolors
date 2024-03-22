@@ -9,6 +9,7 @@ scale_fill_camp_rio(
   discrete = TRUE,
   alpha = 1,
   reverse = TRUE,
+  year = 2022,
   ...
 )
 }
@@ -22,6 +23,8 @@ scale_fill_camp_rio(
 
 \item{reverse}{If `TRUE``, the direction of the color ramp is reversed.}
 
+\item{year}{Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available}
+
 \item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
@@ -29,7 +32,8 @@ IDEA fill palette for ggplot2
 }
 \examples{
 library(ggplot2)
-ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
-  scale_fill_idea()
+ggplot(diamonds) +
+  geom_bar(aes(x = cut, fill = clarity)) +
+  scale_fill_camp_rio()
 
 }

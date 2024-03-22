@@ -10,6 +10,7 @@ scale_color_camp_rio(
   discrete = TRUE,
   alpha = 1,
   reverse = FALSE,
+  year = 2022,
   ...
 )
 
@@ -18,17 +19,20 @@ scale_colour_camp_rio(
   discrete = TRUE,
   alpha = 1,
   reverse = FALSE,
+  year = 2022,
   ...
 )
 }
 \arguments{
-\item{palette}{Choose from 'camp_rio_palettes' list}
+\item{palette}{Choose from 'camp_rio_palettes_2022' list}
 
 \item{discrete}{whether to use a discrete color palette}
 
 \item{alpha}{transparency}
 
 \item{reverse}{logical, Reverse the order of the colours?}
+
+\item{year}{Defaults to the most recent branding guidelines (year = 2022)}
 
 \item{...}{additional arguments to passed to `scale_color_gradientn`}
 }
@@ -37,6 +41,7 @@ Camp RIO color scale palette for ggplot2
 }
 \examples{
 library(ggplot2)
+
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour = factor(cyl))) +
   scale_colour_camp_rio(palette="qual")
@@ -44,6 +49,7 @@ ggplot(mtcars, aes(mpg, wt)) +
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour = hp)) +
   scale_colour_camp_rio(palette="qual", discrete = FALSE)
+
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
   scale_colour_camp_rio(palette="bluegray")

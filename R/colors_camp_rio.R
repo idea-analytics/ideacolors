@@ -134,7 +134,7 @@ camp_rio_palette_ramp <- function(palette="div",
   pal <- if (year == 2022) {
     camp_rio_palettes_2022[[palette]]
   } else {
-    stop("'year' argument must be 2022 (i.e. camp_rio_palette_ramp(year = 2022))")
+    stop("'year' argument must be 2022")
   }
   if (reverse){
     pal <- rev(pal)
