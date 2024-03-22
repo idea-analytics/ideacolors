@@ -63,7 +63,7 @@ idea_colors_2024 <- list(
 
 )
 
-#' IDEA Color Palettes
+#' IDEA Color Palettes (2019)
 #'
 #' A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
@@ -93,7 +93,7 @@ idea_colors_2024 <- list(
 #' # Make a histogram using the qual palette
 #' ggplot(df, aes(x, fill=cl)) + geom_histogram() +
 #'   scale_fill_idea(palette="qual")
-
+#'
 #' @export
 idea_palettes <- list(
   qual = c(idea_colors$darkblue,
@@ -158,6 +158,98 @@ idea_palettes <- list(
 #' @rdname idea_palettes
 #' @export
 idea_palettes_2019 <- idea_palettes
+
+
+#' IDEA Color Palettes (2024)
+#'
+#' A collection of color palettes based on the [IDEA Brand Guidelines (2024)](https://brandfolder.com/ideapublicschools)
+#' (you'll need to behind the firewall to see that guide).
+#'
+#' The list of available palettes is:
+#' * qual
+#' * div
+#' * blueorange
+#' * greenorange
+#' * bluegray
+#' * greengray
+#' * orangegray
+#'
+#' @examples
+#'
+#' # Make an x-y plot using the div palette
+#' library(tidyverse)
+#' df <- data.frame(x = rnorm(100, 0, 20),
+#'           y = rnorm(100, 0, 20),
+#'           cl = sample(letters[1:8], 100, replace=TRUE))
+#' ggplot(df, aes(x, y, colour=cl, shape=cl)) +
+#'   geom_point(size=4) +
+#'   scale_colour_idea() +
+#'   theme_bw() +
+#'   theme(aspect.ratio=1)
+#'
+#' # Make a histogram using the qual palette
+#' ggplot(df, aes(x, fill=cl)) + geom_histogram() +
+#'   scale_fill_idea(palette="qual")
+#'
+#' @export
+idea_palettes_2024 <- list(
+  qual = c(idea_colors_2024$darkblue,
+           idea_colors_2024$lime,
+           idea_colors_2024$blue,
+           idea_colors_2024$yellow,
+           idea_colors_2024$cyan,
+           idea_colors_2024$vermillion,
+           idea_colors_2024$coolgray,
+           idea_colors_2024$melon
+
+  ),
+
+  div = c(idea_colors_2024$darkblue, #cool
+          idea_colors_2024$blue,
+          idea_colors_2024$cyan,
+
+          idea_colors_2024$lime, #green
+
+          idea_colors_2024$yellow,
+          idea_colors_2024$melon,
+          idea_colors_2024$vermillion
+  ),
+
+  blueorange = c(idea_colors_2024$darkblue,
+                 idea_colors_2024$blue,
+                 idea_colors_2024$cyan,
+
+                 idea_colors_2024$yellow,
+                 idea_colors_2024$melon
+  ),
+
+
+  greenorange = c(idea_colors_2024$lime,
+
+                  idea_colors_2024$yellow,
+                  idea_colors_2024$melon
+  ),
+
+  bluegray = c(idea_colors_2024$darkblue,
+               idea_colors_2024$blue,
+               idea_colors_2024$cyan,
+               idea_colors_2024$lightgray,
+               idea_colors_2024$gray,
+               idea_colors_2024$coolgray
+  ),
+  greengray = c(idea_colors_2024$lime,
+                idea_colors_2024$lightgray,
+                idea_colors_2024$gray,
+                idea_colors_2024$coolgray
+  ),
+
+  orangegray = c(idea_colors_2024$melon,
+                 idea_colors_2024$lightgray,
+                 idea_colors_2024$gray,
+                 idea_colors_2024$coolgray
+  )
+
+)
 
 
 #' IDEA palettes with ramped colors
