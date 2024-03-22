@@ -155,6 +155,10 @@ idea_palettes <- list(
 
 )
 
+#' @rdname idea_palettes
+#' @export
+idea_palettes_2019 <- idea_palettes
+
 
 #' IDEA palettes with ramped colors
 #'

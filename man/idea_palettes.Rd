@@ -3,12 +3,17 @@
 \docType{data}
 \name{idea_palettes}
 \alias{idea_palettes}
+\alias{idea_palettes_2019}
 \title{IDEA Color Palettes}
 \format{
+An object of class \code{list} of length 7.
+
 An object of class \code{list} of length 7.
 }
 \usage{
 idea_palettes
+
+idea_palettes_2019
 }
 \description{
 A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
