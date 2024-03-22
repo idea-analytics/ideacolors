@@ -10,7 +10,7 @@
 #'
 #' @param discrete whether to use a discrete color palette
 #'
-#' @parma year Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available
+#' @param year Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available
 #'
 #' @param ... additional arguments to passed to `scale_color_gradientn`
 #'
