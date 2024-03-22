@@ -11,7 +11,7 @@ An object of class \code{list} of length 7.
 idea_palettes_2024
 }
 \description{
-A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+A collection of color palettes based on the [IDEA Brand Guidelines (2024)](https://brandfolder.com/ideapublicschools)
 (you'll need to behind the firewall to see that guide).
 }
 \details{

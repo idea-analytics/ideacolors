@@ -1,13 +1,13 @@
-#' Camp RIO Colors
+#' Camp RIO Colors (2022)
 #'
-#' Named list of colors from the [Camp RIO Brand Guidelines](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
+#' Named list of colors from the [Camp RIO Brand Guidelines (2022)](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available colors is: forestgreen, pond, sunriseyellow,
 #' incarnadine, sunsetorange, midnight, riverblue, goldenhourbeige
-
+#'
 #' @export
-camp_rio_colors <- list(
+camp_rio_colors_2022 <- list(
 
   forestgreen = "#0b582b",
 
@@ -23,9 +23,9 @@ camp_rio_colors <- list(
 
 )
 
-#' Camp RIO Color Palettes
+#' Camp RIO Color Palettes (2022)
 #'
-#' A collection of color palettes based on the [Camp RIO Brand Guidelines](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
+#' A collection of color palettes based on the [Camp RIO Brand Guidelines (2022)](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available palettes is:
@@ -53,59 +53,59 @@ camp_rio_colors <- list(
 #' # Make a histogram using the qual palette
 #' ggplot(df, aes(x, fill=cl)) + geom_histogram() +
 #'   scale_fill_camp_rio(palette="qual")
-
+#'
 #' @export
-camp_rio_palettes <- list(
+camp_rio_palettes_2022 <- list(
 
   # qualitative palette
-  qual = c(camp_rio_colors$forestgreen,
-           camp_rio_colors$pond,
-           camp_rio_colors$sunriseyellow,
-           camp_rio_colors$incarnadine,
-           camp_rio_colors$riverblue,
-           camp_rio_colors$midnight,
-           camp_rio_colors$sunsetorange),
+  qual = c(camp_rio_colors_2022$forestgreen,
+           camp_rio_colors_2022$pond,
+           camp_rio_colors_2022$sunriseyellow,
+           camp_rio_colors_2022$incarnadine,
+           camp_rio_colors_2022$riverblue,
+           camp_rio_colors_2022$midnight,
+           camp_rio_colors_2022$sunsetorange),
 
   # diverging palette
   div = c(# cool
-          camp_rio_colors$riverblue,
-          camp_rio_colors$pond,
+    camp_rio_colors_2022$riverblue,
+    camp_rio_colors_2022$pond,
 
           # green
-          camp_rio_colors$forestgreen,
+    camp_rio_colors_2022$forestgreen,
 
           # warms
-          camp_rio_colors$sunriseyellow,
-          camp_rio_colors$sunsetorange,
-          camp_rio_colors$incarnadine),
+    camp_rio_colors_2022$sunriseyellow,
+    camp_rio_colors_2022$sunsetorange,
+    camp_rio_colors_2022$incarnadine),
 
-  blueorange = c(camp_rio_colors$riverblue,
-                 camp_rio_colors$pond,
-                 camp_rio_colors$sunriseyellow,
-                 camp_rio_colors$sunsetorange),
+  blueorange = c(camp_rio_colors_2022$riverblue,
+                 camp_rio_colors_2022$pond,
+                 camp_rio_colors_2022$sunriseyellow,
+                 camp_rio_colors_2022$sunsetorange),
 
-  greenorange = c(camp_rio_colors$forestgreen,
-                  camp_rio_colors$sunriseyellow,
-                  camp_rio_colors$sunsetorange),
+  greenorange = c(camp_rio_colors_2022$forestgreen,
+                  camp_rio_colors_2022$sunriseyellow,
+                  camp_rio_colors_2022$sunsetorange),
 
-  bluegray = c(camp_rio_colors$riverblue,
-               camp_rio_colors$pond,
+  bluegray = c(camp_rio_colors_2022$riverblue,
+               camp_rio_colors_2022$pond,
                idea_colors$lightgray,
                idea_colors$gray),
 
-  greengray = c(camp_rio_colors$forestgreen,
-                camp_rio_colors$pond,
+  greengray = c(camp_rio_colors_2022$forestgreen,
+                camp_rio_colors_2022$pond,
                 idea_colors$gray,
                 idea_colors$coolgray),
 
-  orangegray = c(camp_rio_colors$sunsetorange,
-                 camp_rio_colors$sunriseyellow,
+  orangegray = c(camp_rio_colors_2022$sunsetorange,
+                 camp_rio_colors_2022$sunriseyellow,
                  idea_colors$gray,
                  idea_colors$coolgray),
 
   # official gradient
-  yelloworange = c(camp_rio_colors$sunriseyellow,
-                   camp_rio_colors$sunsetorange)
+  yelloworange = c(camp_rio_colors_2022$sunriseyellow,
+                   camp_rio_colors_2022$sunsetorange)
 
 )
 
@@ -127,7 +127,7 @@ camp_rio_palettes <- list(
 #'
 
 camp_rio_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE) {
-  pal <- camp_rio_palettes[[palette]]
+  pal <- camp_rio_palettes_2022[[palette]]
   if (reverse){
     pal <- rev(pal)
   }
