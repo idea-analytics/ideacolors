@@ -3,15 +3,20 @@
 \docType{data}
 \name{idea_colors}
 \alias{idea_colors}
-\title{IDEA Public Schools Colors}
+\alias{idea_colors_2019}
+\title{IDEA Public Schools Colors (2019)}
 \format{
+An object of class \code{list} of length 11.
+
 An object of class \code{list} of length 11.
 }
 \usage{
 idea_colors
+
+idea_colors_2019
 }
 \description{
-Named list of colors from the [IDEA Bradn Guidelines](whttps://ideapublicschoolsorg.sharepoint.com/sites/MCE/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines%2Fbranding%5Fbrand%5Fguidelines%5F10x10%5F2019%2Epdf&parent=%2Fsites%2FMCE%2FShared%20Documents%2FCreative%20Resources%2C%20Logos%2C%20and%20Mascots%2FBrand%20Guidelines)
+Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
 (you'll need to behind the firewall to see that guide).
 }
 \details{
