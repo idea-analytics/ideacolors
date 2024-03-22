@@ -28,6 +28,10 @@ idea_colors <- list(
 
 )
 
+#' @rdname idea_colors
+#' @export
+idea_colors_2019 <- idea_colors
+
 #' IDEA Public Schools Colors (2024)
 #'
 #' Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
