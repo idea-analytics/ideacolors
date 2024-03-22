@@ -115,6 +115,7 @@ camp_rio_palettes_2022 <- list(
 #' @param palette Choose from `camp_rio_palettes` list
 #' @param alpha transparency from 0 (completely transparent) to 1 (completely opaque)
 #' @param reverse If `TRUE``, the direction of the color ramp is reversed.
+#' @param year Defaults to the most recent branding guidelines (year = 2022)
 #'
 #' @return a function that takes the number of colors needed as an argument
 #' @export
@@ -126,8 +127,15 @@ camp_rio_palettes_2022 <- list(
 #' filled.contour(volcano,color.palette = camp_rio_palette_ramp(), asp=1)
 #'
 
-camp_rio_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE) {
-  pal <- camp_rio_palettes_2022[[palette]]
+camp_rio_palette_ramp <- function(palette="div",
+                                  alpha = 1,
+                                  reverse = FALSE,
+                                  year = 2022) {
+  pal <- if (year == 2022) {
+    camp_rio_palettes_2022[[palette]]
+  } else {
+    stop("'year' argument must be 2022 (i.e. camp_rio_palette_ramp(year = 2022))")
+  }
   if (reverse){
     pal <- rev(pal)
   }
