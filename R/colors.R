@@ -1,6 +1,6 @@
 #' IDEA Public Schools Colors (2019)
 #'
-#' Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+#' Named list of colors from the [IDEA Brand Guidelines (2019)](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available colors is: darkblue, blue, cyan, lime, magenta, melon,
@@ -34,7 +34,7 @@ idea_colors_2019 <- idea_colors
 
 #' IDEA Public Schools Colors (2024)
 #'
-#' Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+#' Named list of colors from the [IDEA Brand Guidelines (2024)](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available colors is: blue, yellow, darkblue, lime, cyan, melon,
@@ -44,7 +44,7 @@ idea_colors_2019 <- idea_colors
 idea_colors_2024 <- list(
 
   # primary brand colors
-  blue = "#0078FF",
+  blue = "#0078BF",
   yellow = "#FFCF01",
   darkblue = "#002F6C",
 
@@ -65,7 +65,7 @@ idea_colors_2024 <- list(
 
 #' IDEA Color Palettes (2019)
 #'
-#' A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+#' A collection of color palettes based on the [IDEA Brand Guidelines (2019)](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available palettes is:
@@ -257,19 +257,29 @@ idea_palettes_2024 <- list(
 #' @param palette Choose from `idea_palettes` list
 #' @param alpha transparency from 0 (completely transparent) to 1 (completely opaque)
 #' @param reverse If `TRUE``, the direction of the color ramp is reversed.
+#' @param year Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available
 #'
 #' @return a function that takes the number of colors needed as an argument
 #' @export
 #'
 #' @examples
 #' library(scales)
+#'
+#' # Defaults to the most recent branding guidelines (2024)
 #' show_col(idea_palette_ramp()(10))
+#'
+#' # Use the 2019 branding guidelines instead
+#' show_col(idea_palette_ramp(year = 2019)(10))
 #'
 #' filled.contour(volcano,color.palette = idea_palette_ramp(), asp=1)
 #'
 
-idea_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE) {
-  pal <- idea_palettes[[palette]]
+idea_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE, year = 2024) {
+  pal <- if (year == 2024) {
+      idea_palettes_2024[[palette]]
+    } else if (year == 2019) {
+      idea_palettes_2019[[palette]]
+    }
   if (reverse){
     pal <- rev(pal)
   }

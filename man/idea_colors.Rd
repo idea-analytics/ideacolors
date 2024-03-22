@@ -16,7 +16,7 @@ idea_colors
 idea_colors_2019
 }
 \description{
-Named list of colors from the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+Named list of colors from the [IDEA Brand Guidelines (2019)](https://brandfolder.com/ideapublicschools)
 (you'll need to behind the firewall to see that guide).
 }
 \details{

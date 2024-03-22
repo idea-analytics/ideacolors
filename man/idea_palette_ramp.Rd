@@ -4,7 +4,7 @@
 \alias{idea_palette_ramp}
 \title{IDEA palettes with ramped colors}
 \usage{
-idea_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
+idea_palette_ramp(palette = "div", alpha = 1, reverse = FALSE, year = 2024)
 }
 \arguments{
 \item{palette}{Choose from `idea_palettes` list}
@@ -12,6 +12,8 @@ idea_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
 \item{alpha}{transparency from 0 (completely transparent) to 1 (completely opaque)}
 
 \item{reverse}{If `TRUE``, the direction of the color ramp is reversed.}
+
+\item{year}{Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available}
 }
 \value{
 a function that takes the number of colors needed as an argument
@@ -21,7 +23,12 @@ IDEA palettes with ramped colors
 }
 \examples{
 library(scales)
+
+# Defaults to the most recent branding guidelines (2024)
 show_col(idea_palette_ramp()(10))
+
+# Use the 2019 branding guidelines instead
+show_col(idea_palette_ramp(year = 2019)(10))
 
 filled.contour(volcano,color.palette = idea_palette_ramp(), asp=1)
 

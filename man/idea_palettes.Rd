@@ -16,7 +16,7 @@ idea_palettes
 idea_palettes_2019
 }
 \description{
-A collection of color palettes based on the [IDEA Brand Guidelines](https://brandfolder.com/ideapublicschools)
+A collection of color palettes based on the [IDEA Brand Guidelines (2019)](https://brandfolder.com/ideapublicschools)
 (you'll need to behind the firewall to see that guide).
 }
 \details{
