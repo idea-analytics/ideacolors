@@ -279,6 +279,8 @@ idea_palette_ramp <- function(palette="div", alpha = 1, reverse = FALSE, year = 
       idea_palettes_2024[[palette]]
     } else if (year == 2019) {
       idea_palettes_2019[[palette]]
+    } else {
+      stop("'year' argument must be either 2024 (default) or 2019")
     }
   if (reverse){
     pal <- rev(pal)
