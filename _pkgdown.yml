@@ -1,19 +1,34 @@
 url: https://idea-analytics.github.io/ideacolors
+
+home:
+  title: Helpers for using IDEA colors with ggplot2
+
+authors:
+  Chris Haid
+  Steven Macapagal
+
+template:
+  bootstrap: 5
+
 reference:
 - title: Scales
-  desc: IDEA scales for color and fill in ggplot2, including Camp RIO
-- contents:
+  desc: IDEA and Camp RIO scales for color and fill in ggplot2
+  contents:
   - starts_with("scale_")
+
 - title: Themes
-  desc: IDEA themed themes for ggplot2
-- contents:
+  desc: IDEA themes for ggplot2
+  contents:
   - starts_with("theme_")
+
 - title: Color helpers
-  desc: IDEA-themed colors and palettes, so you don't have to look them up
-- contents:
+  desc: IDEA and Camp RIO-themed colors and palettes, so you don't have to look them up
+  contents:
   - idea_colors
+  - idea_colors_2024
   - idea_palettes
+  - idea_palettes_2024
   - idea_palette_ramp
-  - camp_rio_colors
-  - camp_rio_palettes
+  - camp_rio_colors_2022
+  - camp_rio_palettes_2022
   - camp_rio_palette_ramp
