@@ -3,10 +3,6 @@ url: https://idea-analytics.github.io/ideacolors
 home:
   title: Helpers for using IDEA colors with ggplot2
 
-authors:
-  Chris Haid
-  Steven Macapagal
-
 template:
   bootstrap: 5
 
