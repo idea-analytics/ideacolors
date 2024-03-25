@@ -1,13 +1,17 @@
 Package: ideacolors
 Type: Package
-Title: Helpers for  using IDEA colors with ggplot2
+Title: Helpers for using IDEA colors with ggplot2
 Version: 1.0.0
-Author: Chris Haid, Steven Macapagal
-Maintainer: Chris Haid <christopher.haid@ideapublicschools.org>, Steven Macapagal <steven.macapagal@ideapublicschools.org>
+Authors@R: c(
+    person("Chris", "Haid", email = "christopher.haid@ideapublicschools.org", role = c("cre", "aut")),
+    person("Steven", "Macapagal", email = "steven.macapagal@ideapublicschools.org", role = "aut")
+  )
 Description: >
-    This packages has a simple set of ggplot themes and scales
-    that are based on IDEA Public School's Branding Guide.
+    Provides a simple set of 'ggplot2' themes and scales
+    that are based on IDEA Public School's and Camp RIO's branding guidelines.
 License: MIT + file LICENSE
+URL: https://idea-analytics.github.io/ideacolors/index.html, https://github.com/idea-analytics/ideacolors
+BugReports: https://github.com/idea-analytics/ideacolors/issues
 Encoding: UTF-8
 LazyData: true
 Imports: 
