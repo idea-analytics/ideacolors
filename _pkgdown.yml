@@ -21,10 +21,8 @@ reference:
   desc: IDEA and Camp RIO-themed colors and palettes, so you don't have to look them up
   contents:
   - idea_colors
-  - idea_colors_2024
   - idea_palettes
-  - idea_palettes_2024
   - idea_palette_ramp
-  - camp_rio_colors_2022
-  - camp_rio_palettes_2022
+  - camp_rio_colors
+  - camp_rio_palettes
   - camp_rio_palette_ramp
