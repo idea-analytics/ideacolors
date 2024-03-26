@@ -74,15 +74,24 @@ p +
 
 <img src="man/figures/README-example_2-1.png" width="100%" />
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+Using Camp RIO branding guidelines is very similar - instead of
+`scale_color_idea()` or `scale_fill_idea()`, use
+`scale_color_camp_rio()` or `scale_fill_camp_rio()`.
 
-You can also embed plots, for example:
+``` r
+p + 
+  scale_color_camp_rio() +
+  theme_idea_min()
+#> Scale for colour is already present.
+#> Adding another scale for colour, which will replace the existing scale.
+```
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+<img src="man/figures/README-example_4-1.png" width="100%" />
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+Note that Camp RIO themes are not provided - please use
+`theme_idea_min()` or `theme_idea_light()`.
+
+## Feedback
+
+If you have questions, comments, or other general feedback, please
+contact the developers.
