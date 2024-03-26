@@ -6,6 +6,9 @@ home:
 template:
   bootstrap: 5
 
+development:
+  mode: auto
+
 reference:
 - title: Scales
   desc: IDEA and Camp RIO scales for color and fill in ggplot2
