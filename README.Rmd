@@ -57,14 +57,6 @@ p +
   theme_idea_min()
 ```
 
-If you prefer using the color scheme from the 2019 branding guidelines, add the `year = 2019` argument to `scale_color_idea()` or `scale_fill_idea()`. (Only `year = 2019` or `year = 2024` are allowed.)
-
-```{r example_3, warning=FALSE}
-p + 
-  scale_color_idea(palette = "qual", year = 2019) +
-  theme_idea_min()
-```
-
 Using Camp RIO branding guidelines is very similar - instead of `scale_color_idea()` or `scale_fill_idea()`, use `scale_color_camp_rio()` or `scale_fill_camp_rio()`.
 
 ```{r example_4, warning=FALSE}
@@ -73,9 +65,10 @@ p +
   theme_idea_min()
 ```
 
-Note that Camp RIO themes are not provided - please use `theme_idea_min()` or `theme_idea_light()`.
+Note that Camp RIO themes are not provided - please use `theme_idea_min()` or `theme_idea_light()` instead.
 
 
 ## Feedback
 
-If you have questions, comments, or other general feedback, please contact the developers.
+If you have questions, comments, or other general feedback, please create a GitHub issue or contact the developers.
+
