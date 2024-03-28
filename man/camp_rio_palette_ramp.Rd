@@ -4,7 +4,7 @@
 \alias{camp_rio_palette_ramp}
 \title{Camp RIO palettes with ramped colors}
 \usage{
-camp_rio_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
+camp_rio_palette_ramp(palette = "div", alpha = 1, reverse = FALSE, year = 2022)
 }
 \arguments{
 \item{palette}{Choose from `camp_rio_palettes` list}
@@ -12,6 +12,8 @@ camp_rio_palette_ramp(palette = "div", alpha = 1, reverse = FALSE)
 \item{alpha}{transparency from 0 (completely transparent) to 1 (completely opaque)}
 
 \item{reverse}{If `TRUE``, the direction of the color ramp is reversed.}
+
+\item{year}{Defaults to the most recent branding guidelines (year = 2022)}
 }
 \value{
 a function that takes the number of colors needed as an argument

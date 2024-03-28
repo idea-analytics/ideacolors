@@ -9,6 +9,7 @@ scale_fill_idea(
   discrete = TRUE,
   alpha = 1,
   reverse = TRUE,
+  year = 2024,
   ...
 )
 }
@@ -21,6 +22,8 @@ scale_fill_idea(
 \code{\link[grDevices]{hsv}}.}
 
 \item{reverse}{If `TRUE``, the direction of the color ramp is reversed.}
+
+\item{year}{Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available}
 
 \item{...}{additional arguments to pass to scale_color_gradientn}
 }

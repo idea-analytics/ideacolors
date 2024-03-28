@@ -10,6 +10,7 @@ scale_color_idea(
   discrete = TRUE,
   alpha = 1,
   reverse = FALSE,
+  year = 2024,
   ...
 )
 
@@ -18,6 +19,7 @@ scale_colour_idea(
   discrete = TRUE,
   alpha = 1,
   reverse = FALSE,
+  year = 2024,
   ...
 )
 }
@@ -30,6 +32,8 @@ scale_colour_idea(
 
 \item{reverse}{logical, Reverse the order of the colours?}
 
+\item{year}{Defaults to the most recent branding guidelines (year = 2024), but year = 2019 also available}
+
 \item{...}{additional arguments to passed to `scale_color_gradientn`}
 }
 \description{
@@ -37,14 +41,20 @@ IDEA color scale palette for ggplot2
 }
 \examples{
 library(ggplot2)
+
+# Explicitly calls the 2024 branding guidelines
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour = factor(cyl))) +
-  scale_colour_idea(palette="qual")
+  scale_colour_idea(palette="qual", year = 2024)
 
+# Explicitly calls the 2019 branding guidlines
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour = hp)) +
-  scale_colour_idea(palette="qual", discrete = FALSE)
+  scale_colour_idea(palette="qual", discrete = FALSE, year = 2019)
+
+# Chooses the bluegray palette
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
   scale_colour_idea(palette="bluegray")
+
 }
