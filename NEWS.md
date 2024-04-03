@@ -38,6 +38,10 @@
   reference branding guidelines. **`camp_rio_palettes` is deprecated and can no
   longer be called.**
   
+## Minor changes
+
+* Updates to external links, descriptions in documentation
+  
 # ideacolors 1.0.0
 
 ## New features
