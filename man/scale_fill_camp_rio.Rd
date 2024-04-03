@@ -2,7 +2,7 @@
 % Please edit documentation in R/scales_camp_rio.R
 \name{scale_fill_camp_rio}
 \alias{scale_fill_camp_rio}
-\title{IDEA fill palette for ggplot2}
+\title{Camp RIO fill palette for ggplot2}
 \usage{
 scale_fill_camp_rio(
   palette = "div",
@@ -28,7 +28,7 @@ scale_fill_camp_rio(
 \item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
-IDEA fill palette for ggplot2
+Camp RIO fill palette for ggplot2
 }
 \examples{
 library(ggplot2)

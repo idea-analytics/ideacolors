@@ -11,7 +11,7 @@ An object of class \code{list} of length 8.
 camp_rio_colors_2022
 }
 \description{
-Named list of colors from the [Camp RIO Brand Guidelines (2022)](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
+Named list of colors from the [Camp RIO Brand Guidelines (2022)](https://brandfolder.com/ideapublicschools)
 (you'll need to behind the firewall to see that guide).
 }
 \details{

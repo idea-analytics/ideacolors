@@ -34,6 +34,10 @@
   reference branding guidelines. **`camp_rio_colors` is deprecated and can no
   longer be called.**
   
+* `camp_rio_palettes` will be permanently renamed `camp_rio_palettes_2022` to
+  reference branding guidelines. **`camp_rio_palettes` is deprecated and can no
+  longer be called.**
+  
 # ideacolors 1.0.0
 
 ## New features
