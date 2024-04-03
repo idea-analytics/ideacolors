@@ -53,7 +53,7 @@ scale_colour_camp_rio <- scale_color_camp_rio
 
 
 
-#' IDEA fill palette for ggplot2
+#' Camp RIO fill palette for ggplot2
 #'
 #' @param palette Choose from 'idea_palettes' list
 #'

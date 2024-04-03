@@ -1,6 +1,6 @@
 #' Camp RIO Colors (2022)
 #'
-#' Named list of colors from the [Camp RIO Brand Guidelines (2022)](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
+#' Named list of colors from the [Camp RIO Brand Guidelines (2022)](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available colors is: forestgreen, pond, sunriseyellow,
@@ -25,7 +25,7 @@ camp_rio_colors_2022 <- list(
 
 #' Camp RIO Color Palettes (2022)
 #'
-#' A collection of color palettes based on the [Camp RIO Brand Guidelines (2022)](https://ideapublicschoolsorg.sharepoint.com/:b:/s/ResearchandAnalysis/ETpoVdcAUQZCkXhI83eV6U0BHT2vFOcXUqAas326qEneXw?e=am5aeE)
+#' A collection of color palettes based on the [Camp RIO Brand Guidelines (2022)](https://brandfolder.com/ideapublicschools)
 #' (you'll need to behind the firewall to see that guide).
 #'
 #' The list of available palettes is:
