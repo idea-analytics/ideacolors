@@ -1,7 +1,7 @@
 Package: ideacolors
 Type: Package
 Title: Helpers for using IDEA colors with ggplot2
-Version: 1.0.0.9000
+Version: 2.0.0
 Authors@R: c(
     person("Chris", "Haid", email = "christopher.haid@ideapublicschools.org", role = c("cre", "aut")),
     person("Steven", "Macapagal", email = "steven.macapagal@ideapublicschools.org", role = "aut")
